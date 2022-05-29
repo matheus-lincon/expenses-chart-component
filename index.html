@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- displays site properly based on user's device -->
+
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./images/favicon-32x32.png"
+    />
+
+    <link
+      href="https://fonts.googleapis.com/css?family=DM+Sans:regular,italic,500,500italic,700,700italic"
+      rel="stylesheet"
+    />
+
+    <title>Frontend Mentor | Expenses chart component</title>
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="./styles/main.css" />
+  </head>
+  <body>
+    <header id="header">
+      <div class="text">
+        <p class="title">My balance</p>
+        <p id="balance-amount" class="amount">$921.48</p>
+      </div>
+      <div class="img">
+        <img src="./images/logo.svg" alt="Logo" />
+      </div>
+    </header>
+
+    <main id="main">
+      <div class="container">
+        <div class="graph-container">
+          <h1>Spending - Last 7 days</h1>
+          <div class="graph">
+            <div class="data">
+              <div class="bar"></div>
+              <div class="bar"></div>
+              <div class="bar"></div>
+              <div class="bar"></div>
+              <div class="bar"></div>
+              <div class="bar"></div>
+              <div class="bar"></div>
+            </div>
+            <div class="weeks">
+              <p>mon</p>
+              <p>tue</p>
+              <p>wed</p>
+              <p>thu</p>
+              <p>fri</p>
+              <p>sat</p>
+              <p>sun</p>
+            </div>
+          </div>
+
+          <div class="divider"></div>
+
+          <div class="month-info">
+            <div class="total-month">
+              <p class="title">Total this month</p>
+              <p class="amount" id="month-amount">$478.33</p>
+            </div>
+            <div class="last-month">
+              <p class="percent">+2.4%</p>
+              <p class="title">from last month</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </main>
+
+    <div class="attribution">
+      Challenge by
+      <a href="https://www.frontendmentor.io?ref=challenge" target="_blank"
+        >Frontend Mentor</a
+      >. Coded by
+      <a href="https://www.github.com/matheus-lincon">Matheus Lincon</a>.
+    </div>
+
+    <!-- JAVASCRIPT -->
+    <script src="./json/data.json"></script>
+    <script src="./javascript/main.js"></script>
+  </body>
+</html>

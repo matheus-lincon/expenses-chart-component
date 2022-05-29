@@ -1,0 +1,27 @@
+#header {
+  background-color: var(--soft-red);
+  width: var(--width);
+
+  margin: 3rem auto 1rem auto;
+  padding: 1rem;
+  border-radius: var(--border);
+
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+#header .title,
+#header #balance-amount {
+  color: var(--very-pale-orange);
+}
+
+#header #balance-amount {
+  font-size: 1.5rem;
+}
+
+@media only screen and (min-width: 620px) {
+  #header {
+    max-width: 560px;
+  }
+}

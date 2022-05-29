@@ -1,0 +1,82 @@
+.graph-container {
+  background-color: var(--very-pale-orange);
+  border-radius: var(--border);
+
+  padding: 2rem;
+}
+
+.graph-container h1 {
+  font-size: 1.5rem;
+  color: var(--dark-brown);
+}
+
+/* GRAPH */
+
+.graph {
+  margin-top: 3rem;
+}
+
+.graph .data {
+  height: 10rem;
+  display: grid;
+  grid-template-columns: repeat(7, 1fr);
+
+  column-gap: 5px;
+}
+
+.graph .data .bar {
+  width: 100%;
+  background-color: var(--soft-red);
+  border-radius: 5px;
+
+  cursor: pointer;
+  transition: 0.2s;
+
+  position: relative;
+}
+
+.graph .data .bar .price {
+  background-color: var(--dark-brown);
+  color: var(--very-pale-orange);
+  text-align: center;
+  font-weight: 700;
+  padding: 5px;
+  position: absolute;
+  top: -2.5rem;
+
+  font-size: 0.6rem;
+
+  border-radius: 5px;
+}
+/* -- DESKTOP -- */
+@media only screen and (min-width: 620px) {
+  .graph .data .bar .price {
+    width: 100%;
+    font-size: 1rem;
+  }
+}
+/* ---- */
+
+.graph .data .bar:hover {
+  opacity: 0.8;
+  transition: 0.2s;
+}
+
+.graph .weeks {
+  display: grid;
+  grid-template-columns: repeat(7, 1fr);
+  gap: 5px;
+  place-items: center;
+}
+
+/* footer info */
+
+.month-info {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.month-info #month-amount {
+  color: var(--dark-brown);
+}

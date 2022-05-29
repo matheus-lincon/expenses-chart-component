@@ -1,0 +1,62 @@
+@import url(./partials/header.css);
+@import url(./partials/container.css);
+@import url(./partials/graph-container.css);
+
+:root {
+  --soft-red: #ec775f;
+  --cyan: #76b5bc;
+
+  --dark-brown: #382314;
+  --medium-brown: #93867b;
+  --cream: #f8e9dd;
+  --very-pale-orange: #fffaf5;
+
+  --page-margin: 2rem;
+  --width: 90%;
+  --border: 1.5rem;
+}
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'DM Sans', sans-serif;
+  background-color: var(--cream);
+}
+
+.divider {
+  margin: 1.2rem auto;
+  height: 1px;
+  width: 90%;
+  background-color: var(--medium-brown);
+}
+
+.title {
+  font-weight: 400;
+  color: var(--medium-brown);
+}
+
+.amount {
+  font-weight: 700;
+  font-size: 1.8rem;
+  margin-top: 5px;
+}
+
+.percent {
+  color: var(--dark-brown);
+  font-weight: 700;
+  text-align: right;
+  font-size: 1.1rem;
+}
+
+/* Footer */
+.attribution {
+  font-size: 11px;
+  text-align: center;
+}
+.attribution a {
+  color: hsl(228, 45%, 44%);
+}
