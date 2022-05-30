@@ -1,6 +1,6 @@
 /* CONSUME JSON FILE */
 
-fetch('../json/data.json')
+fetch('./json/data.json')
   .then((response) => {
     return response.json()
   })
