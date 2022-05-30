@@ -31,7 +31,7 @@ Users should be able to:
 
 ### Links
 
-- Live Site URL: [Expense Charts Component](https://www.matheus-lincon.github.io/expenses-chart-component)
+- Live Site URL: [Expense Charts Component](https://matheus-lincon.github.io/expenses-chart-component/)
 
 ## My process
 
